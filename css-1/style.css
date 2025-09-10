@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(69, 181, 181);
+}
+h1 {
+  color: lavender;
+  font-size: 50px;
+}
+p {
+  color: lavenderblush;
+  font-size: 12;
+}
+
+h1,
+p {
+  background-color: coral;
+  font-size: 24px;
+}
