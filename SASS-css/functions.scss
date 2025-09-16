@@ -1,0 +1,9 @@
+@function changeBgColor($width) {
+  @if $width <= 767 {
+    @return red;
+  } @else if $width <1024 {
+    @return green;
+  } @else {
+    @return blue;
+  }
+}

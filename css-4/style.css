@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: aquamarine;
+  height: 8%;
+}
+
+@media (min-width: 425px) and (max-width: 1023px) {
+  header {
+    background-color: lightblue;
+    height: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    background-color: lightblue;
+    height: 20%;
+  }
+}
+
+/* Spausdinant ima tik teksta be spalvu */
+@media print {
+  header {
+    background-color: transparent;
+  }
+}

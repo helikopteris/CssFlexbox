@@ -1,0 +1,36 @@
+@import "./mixins.scss";
+@import "./functions.scss";
+
+body {
+  @include perfectCenter;
+  //   background-color: skyblue;
+  height: 100vh;
+  @media (max-width: 767px) {
+    background-color: changeBgColor(767px);
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    background-color: changeBgColor(1023px);
+  }
+  @media (min-width: 1024px) {
+    background-color: changeBgColor(1024px);
+  }
+}
+
+nav {
+  background-color: powderblue;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+}

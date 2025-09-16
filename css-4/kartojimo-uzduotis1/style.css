@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: aquamarine;
+  height: 20%;
+}
+
+nav {
+  background-color: greenyellow;
+  height: 20%;
+}
+
+div {
+  height: 20%;
+}
+
+div:first-of-type {
+  background-color: seagreen;
+}
+
+div:nth-of-type(2) {
+  background-color: olivedrab;
+}
+
+div:last-of-type {
+  background-color: tomato;
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+  header,
+  nav {
+    width: 50%;
+    height: 60%;
+  }
+
+  div {
+    width: 33.33%;
+    height: 40%;
+  }
+}
