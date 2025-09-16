@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+}
+header, nav, aside, article, footer {
+    background-color: lime;
+    border: 2px solid white;
+}
+header{
+    height: 20%;
+}
+.left, .right {
+    height: 80vh;
+}
+
+.left {
+    width: 30%;
+}
+.right {
+    width: 70%;
+}
+
+nav, aside {
+    height: 50%;
+}
+
+article {
+    height: 80%;
+}
+
+footer {
+    height: 20%;
+}
+
+.container {
+    display: flex;
+}

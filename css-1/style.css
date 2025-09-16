@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+}
 body {
   background-color: rgb(69, 181, 181);
+}
+
+body::before{
+  content: manoPseudoElementas;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F40%2Fb6%2Fc6%2F40b6c6fbe45d8284118a541c229e28df.jpg&f=1&nofb=1&ipt=466a6473caf93d84de0a7f5a915b75eaa8dea49cf7762b027dbf1ad81bcedb66);
+  opacity: 0.5;
+  position: absolute;
 }
 h1 {
   color: lavender;
@@ -15,3 +25,32 @@ p {
   background-color: coral;
   font-size: 24px;
 }
+p::-moz-selection{
+  background-color: yellow;
+  color: black;
+}
+
+/* img {
+  width: 300px;
+  border-radius: 30px;
+  border: 5px solid lavender;
+  object-fit: cover;
+*/
+section{
+  border: 1px solid blue;
+  height: 50vh;
+}
+div{
+  width: 10%;
+  margin: 1% 2%;
+  height: 95%;
+}
+.left{
+  float: left;
+  background-color: pink;
+}
+.right{
+  float: right;
+  background-color: cyan;
+}
+
