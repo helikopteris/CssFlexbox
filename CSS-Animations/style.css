@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  animation-name: changeBG;
+  animation-delay: 2000ms;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeBG {
+  0% {
+    background-color: aquamarine;
+  }
+
+  25% {
+    background-color: seagreen;
+  }
+
+  50% {
+    background-color: yellowgreen;
+  }
+
+  75% {
+    background-color: cadetblue;
+  }
+
+  100% {
+    background-color: darkblue;
+  }
+}
+
+.trans {
+  height: 70px;
+  width: 70px;
+  background-color: crimson;
+  animation: run 3s ease-in infinite;
+  position: absolute;
+  top: 20%;
+}
+
+@keyframes run {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+.desra {
+  width: 100px;
+  height: 60px;
+  background-color: hotpink;
+  animation: longer 4s infinite;
+  text-align: center;
+  position: absolute;
+  top: 50vh;
+}
+
+@keyframes longer {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.trans:hover {
+  background-color: tomato;
+}

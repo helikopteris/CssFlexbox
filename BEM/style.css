@@ -1,0 +1,20 @@
+.card {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 5px;
+  background: linear-gradient(mediumseagreen, cyan, violet);
+}
+.card__text {
+  color: cornsilk;
+  font-style: italic;
+}
+.card__text:hover {
+  color: springgreen;
+}
+.card__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50%;
+}/*# sourceMappingURL=style.css.map */
